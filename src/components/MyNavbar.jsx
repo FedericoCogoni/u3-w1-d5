@@ -11,8 +11,6 @@ class MyNavbar extends Component {
           <Navbar.Brand href="#">
             <img src={logo} style={{ width: "100px", height: "55px" }} alt="Logo" />
           </Navbar.Brand>
-          {/* navbartoggle è un elemento button che viene settato in automatico come type button, figata */}
-          {/* inoltre è settato per nascondere o mostrare il contenuto collapse (mostra di deafult l'icona con le 3 stanghette) */}
           <Navbar.Toggle aria-controls="MyNavbar" />
           <Navbar.Collapse id="MyNavbar">
             <Nav className="me-auto">
