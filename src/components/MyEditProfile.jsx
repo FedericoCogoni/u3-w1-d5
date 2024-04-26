@@ -5,7 +5,7 @@ function MyEditProfile() {
     <div className="container bg-dark pt-2">
       <header>
         <a className="logo" href="#1">
-          <img src={logo} width="112" height="47" alt="Netflix logo" loading="lazy" />
+          <img src={logo} width="112" height="47" alt="Netflix logo" />
         </a>
       </header>
       <div className="container edit-profile stretch text-white pt-4">
@@ -27,12 +27,12 @@ function MyEditProfile() {
               <h5>Language:</h5>
             </label>
             <select id="language">
-              <option value="English">Italiano</option>
-              <option value="German">Español</option>
+              <option value="Italian">Italiano</option>
+              <option value="Español">Español</option>
               <option value="Spanish">Français</option>
-              <option value="Italian">Russian</option>
-              <option value="Italian">Chinese</option>
-              <option value="Italian">Sardo</option>
+              <option value="Russian">Russian</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Sardinian">Sardo</option>
             </select>
             <hr />
             <h5>Maturity Settings:</h5>
@@ -43,7 +43,7 @@ function MyEditProfile() {
             </button>
             <hr />
             <h5>Autoplay controls</h5>
-            <label className="checkboxBox">
+            <label className="checkboxBox ">
               <input type="checkbox" className="btn custom-checkbox" defaultChecked />
               Autoplay next episode in a series on all devices.
             </label>
