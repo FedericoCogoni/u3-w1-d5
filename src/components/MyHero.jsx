@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 function MyHero() {
   return (
-    <div className="d-flex justify-content-between">
-      <div className="d-flex">
+    <div className="d-flex justify-content-between align-items-center mb-4 mt-2">
+      <div className="d-flex ">
         <h2>TV Shows</h2>
         <ButtonGroup>
           <DropdownButton

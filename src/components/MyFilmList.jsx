@@ -11,9 +11,16 @@ class MyFilmList extends Component {
       <>
         <h4>Trending Now</h4>
         <div>
-          <MyList film="Harry Potter" />
+          <MyList film="Star Trek" />
         </div>
         <h4>New Releases</h4>
+        <div>
+          <MyList film="Harry Potter" />
+        </div>
+        <h4>Watch it Again</h4>
+        <div>
+          <MyList film="avengers" />
+        </div>
       </>
     )
   }
