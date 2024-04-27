@@ -1,0 +1,60 @@
+.cover:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 9px -2px white;
+}
+
+.cover {
+  transition: transform 0.5s;
+}
+
+/* carosello */
+.carousel-indicators {
+  display: none !important;
+}
+.carouselImage {
+  width: 90%;
+  max-height: 100%px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.carouselImage:hover {
+  border: solid 3px white;
+}
+
+@media (min-width: 768px) {
+  .carouselImage {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carouselImage {
+    max-width: 50%;
+  }
+}
+
+/* MyFilmList */
+.animation1 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.animation1::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff0000; /* Rosso per l'esempio, cambialo a tuo piacimento */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animation1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,4 +1,5 @@
-import logo from "../assets/logo.png"
+import "../css/MyEditProfile.css"
+import logo from "../assets/img/logo.png"
 
 function MyEditProfile() {
   return (

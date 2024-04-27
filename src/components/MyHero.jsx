@@ -1,5 +1,4 @@
 import { ButtonGroup, DropdownButton, Dropdown } from "react-bootstrap"
-import "bootstrap/dist/css/bootstrap.min.css"
 
 function MyHero() {
   return (

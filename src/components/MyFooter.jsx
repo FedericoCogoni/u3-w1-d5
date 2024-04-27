@@ -1,5 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-function Footer() {
+import "../assets/css/MyFooter.css"
+function MyFooter() {
   return (
     <footer>
       <div className="row justify-content-center mt-5">
@@ -119,4 +119,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default MyFooter

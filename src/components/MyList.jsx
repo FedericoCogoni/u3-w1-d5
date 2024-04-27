@@ -1,5 +1,6 @@
 import { Component } from "react"
 import { Carousel, Image, Spinner } from "react-bootstrap"
+import "../assets/css/MyList.css"
 
 // API_KEY = "b11caad1"
 const URL = "http://www.omdbapi.com/?apikey=b11caad1&s="
@@ -64,9 +65,7 @@ class MyList extends Component {
     return (
       <div className="text-center">
         {isLoading ? (
-          <Spinner animation="grow" variant="light" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
+          <Spinner animation="border" variant="danger" role="status"></Spinner>
         ) : search.length > 0 ? (
           <Carousel>
             {search.map(film => (
