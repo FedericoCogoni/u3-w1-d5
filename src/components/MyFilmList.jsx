@@ -11,15 +11,15 @@ class MyFilmList extends Component {
       <div className="text-center ">
         <h2 className="display-5 animation1 fw-bold">Trending Now</h2>
         <div className="mt-5 mb-5 ">
-          <MyList film="Star Trek" />
+          <MyList film="Star Wars" />
         </div>
         <h2 className="display-5 animation1 fw-bold">New Releases</h2>
         <div className="mt-5 mb-5 ">
-          <MyList film="Harry Potter" />
+          <MyList film="shrek" />
         </div>
         <h2 className="display-5 animation1 fw-bold">Watch it Again</h2>
         <div className="mt-5 mb-5 ">
-          <MyList film="avengers" />
+          <MyList film="fantozzi" />
         </div>
       </div>
     )
