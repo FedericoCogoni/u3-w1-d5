@@ -150,3 +150,25 @@
   margin-bottom: 170px;
   cursor: pointer;
 }
+
+/* carosello */
+.carousel-indicators {
+  display: none !important;
+}
+.carouselImage {
+  width: 90%;
+  max-height: 100%px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .carouselImage {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carouselImage {
+    max-width: 30%;
+  }
+}
