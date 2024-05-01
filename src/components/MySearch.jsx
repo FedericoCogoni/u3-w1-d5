@@ -1,15 +1,16 @@
-import React from "react"
+import React, { Component } from "react"
 import { Form, FormControl, Spinner } from "react-bootstrap"
 import Carousel from "react-multi-carousel"
 import "react-multi-carousel/lib/styles.css"
 import "../assets/css/MyList.css"
 import Image from "react-bootstrap/Image"
 
-class MySearch extends React.Component {
+class MySearch extends Component {
   state = {
     searchQuery: "",
     searchResults: [],
     isLoading: false,
+    hasSearched: false,
   }
 
   handleInputChange = event => {
@@ -19,12 +20,13 @@ class MySearch extends React.Component {
   handleSearch = event => {
     event.preventDefault()
     const { searchQuery } = this.state
-    if (this.state) {
-      this.setState({ isLoading: true })
+    if (searchQuery) {
+      console.log("Search Query:", { searchQuery })
+      this.setState({ isLoading: true, hasSearched: true })
       fetch(`http://www.omdbapi.com/?apikey=b11caad1&s=${searchQuery}`)
         .then(response => response.json())
         .then(data => {
-          console.log()
+          console.log("Search Results:", data.Search)
           this.setState({ searchResults: data.Search || [], isLoading: false })
         })
         .catch(err => {
@@ -35,7 +37,7 @@ class MySearch extends React.Component {
   }
 
   render() {
-    const { searchQuery, searchResults, isLoading } = this.state
+    const { searchQuery, searchResults, isLoading, hasSearched } = this.state
     const responsive = {
       extraLargeDesktop: {
         breakpoint: { max: 4000, min: 2001 },
@@ -64,31 +66,35 @@ class MySearch extends React.Component {
         <Form className="d-flex" onSubmit={this.handleSearch}>
           <FormControl
             type="search"
-            placeholder="Titles, people, genres"
+            placeholder="Titles"
             className="me-2 mb-5 mt-3 w-50"
             aria-label="Search"
             value={searchQuery}
             onChange={this.handleInputChange}
           />
         </Form>
-        {searchResults.length > 0 && (
-          <h2 className="display-6 animation1 fw-bold mb-5">Results:</h2>
-        )}
         {isLoading ? (
-          <Spinner animation="border" variant="light" />
+          <div className="text-center">
+            <Spinner animation="border" variant="light" />
+          </div>
         ) : (
-          searchResults.length > 0 && (
-            <Carousel responsive={responsive}>
-              {searchResults.map(film => (
-                <Image
-                  key={film.imdbID}
-                  className="d-block carouselImage"
-                  src={film.Poster}
-                  alt="film poster"
-                />
-              ))}
-            </Carousel>
-          )
+          <div>
+            {hasSearched && <h2 className="display-6 animation1 fw-bold mb-5">Results:</h2>}
+            {searchResults.length > 0 ? (
+              <Carousel responsive={responsive}>
+                {searchResults.map(film => (
+                  <Image
+                    key={film.imdbID}
+                    className="d-block carouselImage"
+                    src={film.Poster}
+                    alt="film poster"
+                  />
+                ))}
+              </Carousel>
+            ) : (
+              hasSearched && <h3 className="text-center text-white mb-3">No films found 😔</h3>
+            )}
+          </div>
         )}
       </div>
     )

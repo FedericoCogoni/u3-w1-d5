@@ -1,9 +1,9 @@
-import React from "react"
+import React, { Component } from "react"
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
 import logo from "../assets/img/logo.png"
 import avatar from "../assets/img/avatar.png"
 
-class MyNavbar extends React.Component {
+class MyNavbar extends Component {
   render() {
     return (
       <header>
