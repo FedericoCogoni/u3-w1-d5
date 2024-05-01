@@ -1,5 +1,6 @@
 .footer-icon {
   color: #838383;
+  font-size: 28px;
 }
 
 .footer-links {
@@ -9,11 +10,13 @@
 .footer-links p {
   margin-bottom: 0.3em;
   color: #838383;
+  font-size: 24px;
 }
 
 .footer-links a {
   color: #838383;
   text-decoration: none;
+  font-size: 24px;
 }
 
 .footer-links a:hover {
@@ -32,5 +35,5 @@
 
 .copyright {
   color: #838383;
-  font-size: 0.6em;
+  font-size: 0.8em;
 }

@@ -66,9 +66,10 @@ class MySearch extends Component {
         <Form className="d-flex" onSubmit={this.handleSearch}>
           <FormControl
             type="search"
-            placeholder="Titles"
-            className="me-2 mb-5 mt-3 w-50"
+            placeholder=" Titles 🔎"
+            className="me-2 mb-5 mt-3 w-25"
             aria-label="Search"
+            style={{ height: "50px", fontSize: "22px", fontWeight: "bold" }}
             value={searchQuery}
             onChange={this.handleInputChange}
           />

@@ -6,7 +6,7 @@ import avatar from "../assets/img/avatar.png"
 class MyNavbar extends Component {
   render() {
     return (
-      <header>
+      <header className="mb-5">
         <Navbar expand="lg" variant="dark" bg="dark">
           <Container fluid>
             <Navbar.Brand href="index.html">
@@ -15,13 +15,23 @@ class MyNavbar extends Component {
             <Navbar.Toggle aria-controls="navbar" />
             <Navbar.Collapse id="navbar">
               <Nav className="me-auto">
-                <Nav.Link href="#">Home</Nav.Link>
-                <Nav.Link href="#">TV Shows</Nav.Link>
-                <Nav.Link href="#">Movies</Nav.Link>
-                <Nav.Link href="#">My List</Nav.Link>
+                <Nav.Link className="navText" href="#">
+                  Home
+                </Nav.Link>
+                <Nav.Link className="navText" href="#">
+                  TV Shows
+                </Nav.Link>
+                <Nav.Link className="navText" href="#">
+                  Movies
+                </Nav.Link>
+                <Nav.Link className="navText" href="#">
+                  My List
+                </Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#">KIDS</Nav.Link>
+                <Nav.Link className="navText" href="#">
+                  KIDS
+                </Nav.Link>
                 <Nav.Link href="#">
                   <i className="bi bi-bell-fill"></i>
                 </Nav.Link>
@@ -32,11 +42,17 @@ class MyNavbar extends Component {
                   menuVariant="dark"
                   align="end"
                 >
-                  <NavDropdown.Item href="#">Your Name</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Account</NavDropdown.Item>
-                  <NavDropdown.Item href="#">Manage profiles</NavDropdown.Item>
+                  <NavDropdown.Item className="navText" href="#">
+                    Your Name
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="navText" href="#">
+                    Account
+                  </NavDropdown.Item>
+                  <NavDropdown.Item className="navText" href="#">
+                    Manage profiles
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="https://www.google.com/">
+                  <NavDropdown.Item className="navText" href="https://www.google.com/">
                     Sign out of Netflix
                   </NavDropdown.Item>
                 </NavDropdown>

@@ -16,6 +16,11 @@
   color: #f5f5f1;
 }
 
+.custom {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
 /* Navbar */
 .navbar-nav {
   font-size: 90%;
@@ -26,7 +31,6 @@
   font-size: 0.8em;
 }
 
-.custom {
-  padding-left: 5% !important;
-  padding-right: 5% !important;
+.nav-link {
+  font-size: 24px !important;
 }
