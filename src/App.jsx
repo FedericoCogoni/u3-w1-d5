@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <MyNavbar />
-      <Container>
+      <Container fluid className="custom">
         <MyHero />
         <MySearch />
         <MyFilmList />

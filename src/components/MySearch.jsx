@@ -45,7 +45,7 @@ class MySearch extends Component {
       },
       largeDesktop: {
         breakpoint: { max: 2000, min: 1400 },
-        items: 4,
+        items: 6,
       },
       desktop: {
         breakpoint: { max: 1399, min: 992 },

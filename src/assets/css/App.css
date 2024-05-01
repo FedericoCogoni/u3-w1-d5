@@ -25,3 +25,8 @@
   color: #f5f5f1;
   font-size: 0.8em;
 }
+
+.custom {
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
