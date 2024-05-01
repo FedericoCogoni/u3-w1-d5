@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, Nav, Container, NavDropdown, Form, FormControl } from "react-bootstrap"
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
 import logo from "../assets/img/logo.png"
 import avatar from "../assets/img/avatar.png"
 
@@ -16,21 +16,10 @@ class MyNavbar extends React.Component {
             <Navbar.Collapse id="navbar">
               <Nav className="me-auto">
                 <Nav.Link href="#">Home</Nav.Link>
-                <Nav.Link href="#" active>
-                  TV Shows
-                </Nav.Link>
+                <Nav.Link href="#">TV Shows</Nav.Link>
                 <Nav.Link href="#">Movies</Nav.Link>
-
                 <Nav.Link href="#">My List</Nav.Link>
               </Nav>
-              <Form className="d-flex">
-                <FormControl
-                  type="search"
-                  placeholder="Titles, people, genres"
-                  className="me-2"
-                  aria-label="Search"
-                />
-              </Form>
               <Nav>
                 <Nav.Link href="#">KIDS</Nav.Link>
                 <Nav.Link href="#">

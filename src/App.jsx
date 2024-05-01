@@ -6,6 +6,7 @@ import MyFooter from "./components/MyFooter"
 import MyHero from "./components/MyHero"
 import MyFilmList from "./components/MyFilmList"
 import { Container } from "react-bootstrap"
+import MySearch from "./components/MySearch"
 // import MyEditProfile from "./components/MyEditProfile"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <MyNavbar />
       <Container>
         <MyHero />
+        <MySearch />
         <MyFilmList />
         {/* <MyEditProfile /> */}
         <MyFooter />

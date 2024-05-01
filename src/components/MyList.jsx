@@ -23,7 +23,6 @@ class MyList extends Component {
         }
       })
       .then(data => {
-        console.log(data)
         this.setState({ search: data.Search, isLoading: false })
       })
       .catch(err => {
@@ -69,7 +68,6 @@ class MyList extends Component {
         ) : (
           <Carousel responsive={responsive}>
             {search.map(film => {
-              console.log(film)
               return (
                 <Image
                   key={film.imdbID}
