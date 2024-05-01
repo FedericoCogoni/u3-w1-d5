@@ -79,8 +79,8 @@ class MySearch extends Component {
             <Spinner animation="border" variant="light" />
           </div>
         ) : (
-          <div>
-            {hasSearched && <h2 className="display-6 animation1 fw-bold mb-5">Results:</h2>}
+          <div className="mb-5">
+            {hasSearched && <h2 className="display-6 animation1 fw-bold ">Results:</h2>}
             {searchResults.length > 0 ? (
               <Carousel responsive={responsive}>
                 {searchResults.map(film => (
@@ -93,7 +93,9 @@ class MySearch extends Component {
                 ))}
               </Carousel>
             ) : (
-              hasSearched && <h3 className="text-center text-white mb-3">No films found 😔</h3>
+              hasSearched && (
+                <h3 className="text-center text-white bold mb-5 display-5">No films found 😔</h3>
+              )
             )}
           </div>
         )}

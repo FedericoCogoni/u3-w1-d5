@@ -62,7 +62,7 @@ class MyList extends Component {
     }
 
     return (
-      <div className="text-center">
+      <div>
         {isLoading ? (
           <Spinner animation="border" variant="danger" role="status" />
         ) : (
