@@ -67,7 +67,7 @@ class MySearch extends Component {
           <FormControl
             type="search"
             placeholder=" Titles 🔎"
-            className="me-2 mb-5 mt-3 w-25"
+            className="me-2 mb-5 mt-3 w-50"
             aria-label="Search"
             style={{ height: "50px", fontSize: "22px", fontWeight: "bold" }}
             value={searchQuery}
