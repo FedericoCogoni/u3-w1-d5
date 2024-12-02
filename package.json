@@ -1,5 +1,5 @@
 {
-  "name": "u3-w1-d5",
+  "name": "netflix_clone_apii",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.3.0",
     "react-multi-carousel": "^2.8.5",
+    "react-router-dom": "^7.0.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },

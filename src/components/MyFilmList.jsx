@@ -19,7 +19,11 @@ class MyFilmList extends Component {
         </div>
         <h2 className="display-6 animation1 fw-bold">Watch it Again:</h2>
         <div className="mt-5 mb-5 ">
-          <MyList film="fantozzi" />
+          <MyList film="the lord of the rings" />
+        </div>
+        <h2 className="display-6 animation1 fw-bold">Keep Watching:</h2>
+        <div className="mt-5 mb-5 ">
+          <MyList film="attack on titan" />
         </div>
       </>
     )

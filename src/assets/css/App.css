@@ -34,3 +34,6 @@
 .nav-link {
   font-size: 24px !important;
 }
+.padding-container {
+  padding: 0 4rem;
+}

@@ -49,11 +49,11 @@ class MyList extends Component {
       },
       desktop: {
         breakpoint: { max: 1399, min: 992 },
-        items: 3,
+        items: 5,
       },
       tablet: {
         breakpoint: { max: 991, min: 768 },
-        items: 2,
+        items: 4,
       },
       mobile: {
         breakpoint: { max: 767, min: 0 },
@@ -62,7 +62,7 @@ class MyList extends Component {
     }
 
     return (
-      <div>
+      <div className="container-fluid carousel-container">
         {isLoading ? (
           <Spinner animation="border" variant="danger" role="status" />
         ) : (

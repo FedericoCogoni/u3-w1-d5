@@ -45,15 +45,15 @@ class MySearch extends Component {
       },
       largeDesktop: {
         breakpoint: { max: 2000, min: 1400 },
-        items: 6,
+        items: 5,
       },
       desktop: {
         breakpoint: { max: 1399, min: 992 },
-        items: 3,
+        items: 5,
       },
       tablet: {
         breakpoint: { max: 991, min: 768 },
-        items: 2,
+        items: 4,
       },
       mobile: {
         breakpoint: { max: 767, min: 0 },

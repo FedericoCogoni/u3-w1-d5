@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap"
 import logo from "../assets/img/logo.png"
 import avatar from "../assets/img/avatar.png"
-
+import { Link } from "react-router-dom"
 class MyNavbar extends Component {
   render() {
     return (
@@ -48,8 +48,13 @@ class MyNavbar extends Component {
                   <NavDropdown.Item className="navText" href="#">
                     Account
                   </NavDropdown.Item>
-                  <NavDropdown.Item className="navText" href="#">
-                    Manage profiles
+                  <NavDropdown.Item className="navText" href="">
+                    <Link
+                      to="/edit-profile"
+                      className="text-decoration-none bg-transparent text-white"
+                    >
+                      Manage profiles
+                    </Link>
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item className="navText" href="https://www.google.com/">
