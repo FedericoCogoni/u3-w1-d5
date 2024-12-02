@@ -6,15 +6,15 @@ import { Link } from "react-router-dom"
 class MyNavbar extends Component {
   render() {
     return (
-      <header className="mb-5">
+      <header className="mb-5 m-1">
         <Navbar expand="lg" variant="dark" bg="dark">
           <Container fluid>
             <Navbar.Brand href="index.html">
               <img src={logo} width="112" height="47" alt="Netflix logo" loading="lazy" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar" />
-            <Navbar.Collapse id="navbar">
-              <Nav className="me-auto">
+            <Navbar.Collapse id="navbar" className="ms-3">
+              <Nav className="me-auto ">
                 <Nav.Link className="navText" href="#">
                   Home
                 </Nav.Link>

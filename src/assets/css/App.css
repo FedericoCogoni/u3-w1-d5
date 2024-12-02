@@ -37,3 +37,6 @@
 .padding-container {
   padding: 0 4rem;
 }
+.navbar-toggler {
+  margin-right: 7px;
+}
